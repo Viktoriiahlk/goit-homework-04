@@ -117,7 +117,7 @@ img {
     height: 4px;
     border-radius: 2px;
     background-color: var(--color-pressed-stele);
-    transition: color (0.4, 0, 0.2, 1) 250ms
+    transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .nav-link:hover {
@@ -330,8 +330,8 @@ img {
 .team-list-icon {
     display: flex;
     gap: 24px;
-    padding-bottom: 32px;
     justify-content: center;
+    padding-bottom: 32px;
 }
 
 .icon-link {
@@ -345,11 +345,18 @@ img {
     transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
+.icon-link:focus,
 .icon-link:hover {
     background-color: var(--color-pressed-stele);
 }
 
+.svg {
+    width: 16px;
+    height: 16px;
+}
+
 .icon-item {
+    fill: var(--color-bg-section);
     align-items: center;
     justify-content: center;
 }
@@ -394,6 +401,7 @@ img {
     background-color: var(--color--components);
     height: 100%;
     width: 100%;
+    top: 0;
     transform: translateY(100%);
     transition: transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
