@@ -331,7 +331,7 @@ img {
     display: flex;
     gap: 24px;
     justify-content: center;
-    padding-bottom: 32px;
+    padding-top: 8px;
 }
 
 .icon-link {
@@ -470,7 +470,6 @@ img {
 }
 
 .footer-socmedia {
-    padding-left: 540px;
     align-items: baseline;
 }
 
