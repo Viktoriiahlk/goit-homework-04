@@ -99,7 +99,7 @@ img {
 .nav-link {
     display: inline-block;
     padding: 24px 0;
-    color: var(--color-pressed-stele);
+    color: var(--color-brand);
     line-height: 1.5;
     font-size: 16px;
     font-weight: 500;
@@ -108,7 +108,7 @@ img {
     transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
-.nav-link::after {
+.nav-link.active:after {
     position: absolute;
     content: '';
     left: 0;
@@ -120,6 +120,10 @@ img {
     background-color: var(--color-pressed-stele);
 }
 
+.active {
+    color: var(--color-pressed-stele);
+}
+
 .nav-link:hover {
     color: var(--color-pressed-stele);
 }
@@ -127,7 +131,6 @@ img {
 .nav-link:focus {
     color: var(--color-pressed-stele);
 }
-
 
 .address {
     font-style: normal;
@@ -401,7 +404,7 @@ img {
     transition: transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
-.portfolio-img:hover .portfolio-overlay {
+.portfolio-item:hover .portfolio-overlay {
     transform: translateY(0%);
 }
 
