@@ -51,7 +51,7 @@
         <section class="hero-section">
             <div class="container hero-container">
                 <H1 class="hero-title">Effective Solutions for Your Business</H1>
-                <button class="button" type="button">Order Service</button>
+                <button class="button" type="button" data-modal-open>Order Service</button>
             </div>
         </section>
 
@@ -437,41 +437,58 @@
             </div>
         </div>
     </footer>
-    <!--Modal-->
+    <!--Modal
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+            <button type="button" class="modal-close" data-modal-close>X</button>
+            <h2 class="modai-title">Leave your contact and we will call you back</h2>
             <form action="">
                 <div>
-                    <label for="name">
+                    <label class="modal-label" for="name">
                         Name
-                        <input type="text" name="name" id="name" autofocus>
+                        <input class="modal-input" type="text" name="name" id="name" autofocus>
                     </label>
                 </div>
 
                 <div>
-                    <label for="phone">
+                    <label class="modal-label" for="phone">
                         Phone
-                        <input type="tel" name="phone" id="phone">
+                        <input class="modal-input" type="tel" name="phone" id="phone">
+                    </label>
                 </div>
 
                 <div>
-                    <label for="email">
+                    <label class="modal-label" for="email">
                         Email
-                        <input type="email" name="email" id="email">
+                        <input class="modal-input" type="email" name="email" id="email">
+                    </label>
                 </div>
 
                 <div>
-                    <label for="comment">
-                        Email
-                        <textarea type="text" name="comment" id="comment">
+                    <label class="modal-label" for="comment">
+                        Comment
+                        <textarea class="modal-textarea" type="text" name="comment" id="comment"
+                            placeholder="Text input"></textarea>
+                    </label>
                 </div>
 
-                
+                <div>
+                    <input type="checkbox" name="policy" id="checkbox">I accept the terms and conditions of the
+                    Privacy Policy
+                    <label for="checkbox" for="checkbox"></label>
+                    </label>
+                </div>
+
+                <div>
+
+                    <button type="submit" class="button">Submit</button>
+
+                </div>
             </form>
 
         </div>
 
-    </div>
+    </div>-->
 </body>
 
 </html>
